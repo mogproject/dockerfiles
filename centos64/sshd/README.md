@@ -2,7 +2,7 @@
 
 ```
 $ SSH_FORWARD_PORT=50000
-$ DOCKER_HOST=    # Set your docker host!
+$ DOCKER_HOST=    # Set the ip address of your docker host!
 $ docker run -d -p $SSH_FORWARD_PORT:22 mogproject/sshd
 $ ssh -p $SSH_FORWARD_PORT -l ssh-user $DOCKER_HOST
 ```
