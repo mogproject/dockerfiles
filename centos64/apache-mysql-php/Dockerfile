@@ -53,7 +53,8 @@ RUN mysql_install_db && chown -R mysql:mysql /var/lib/mysql && (/usr/bin/mysqld_
 # PHP
 #
 
-RUN yum install -y --nogpgcheck php php-mbstring php-mysql
+RUN yum install -y --nogpgcheck php php-mbstring
+RUN yum install -y --nogpgcheck --disablerepo=base php-mysql
 
 # example for additional settings
 #ADD php.ini /etc/php.ini
