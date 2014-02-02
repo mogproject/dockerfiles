@@ -59,5 +59,6 @@ RUN yum install -y --nogpgcheck --disablerepo=base php-mysql
 # example for additional settings
 #ADD php.ini /etc/php.ini
 
+
 EXPOSE 22 80 3306
 CMD ["/usr/bin/supervisord"]
