@@ -4,7 +4,7 @@
      $ APACHE_PORT=49000
      $ MYSQL_PORT=49001
      $ SSH_HOST=localhost    # Set the ip address/hostname of your docker host
-     $ docker run -d -t -p $SSH_PORT:22 -p $APACHE_PORT:80 -p $MYSQL_PORT:3306 mogproject/apache_mysql_php
+     $ docker run -d -t -p $SSH_PORT:22 -p $APACHE_PORT:80 -p $MYSQL_PORT:3306 mogproject/apache-mysql-php
 
 * SSH, Apache + PHP
 
@@ -27,5 +27,5 @@
 
 ### How to build
 
-    $ docker build -t mogproject/apache_mysql_php .
+    $ docker build -t mogproject/apache-mysql-php .
 
