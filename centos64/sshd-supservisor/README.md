@@ -8,7 +8,7 @@
 ##### Hint
 
 * Default password of ```ssh-user``` is ```ssh-user```
-* You are allowed to use ```sudo``` in the container. e.g. ```$ sudo su -```
+* You are allowed to use ```sudo``` in the container. e.g. ```$ sudo -s```
 
 ### How to build
 
