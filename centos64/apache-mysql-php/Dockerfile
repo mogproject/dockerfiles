@@ -39,8 +39,8 @@ RUN yum install -y --nogpgcheck httpd
 #
 
 # enable MySQL official repository
-RUN yum install -y http://repo.mysql.com/mysql-community-release-el6-5.noarch.rpm
-RUN yum install -y --nogpgcheck mysql-community-server
+RUN yum localinstall -y http://repo.mysql.com/mysql-community-release-el6.rpm
+RUN yum install -y --nogpgcheck mysql-server mysql-community-libs-compat
 
 # example for additional settings
 #ADD my.cnf /etc/my.cnf
