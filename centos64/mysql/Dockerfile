@@ -39,6 +39,6 @@ RUN yum install -y --nogpgcheck mysql-server mysql-community-libs-compat
 # allow remote access
 RUN mysql_install_db && chown -R mysql:mysql /var/lib/mysql && (/usr/bin/mysqld_safe &) && sleep 5 && mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO root@'%' WITH GRANT OPTION;" && mysqladmin -uroot shutdown
 
-EXPOSE 3306
+EXPOSE 22 3306
 CMD ["/usr/bin/supervisord"]
 

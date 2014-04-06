@@ -30,6 +30,6 @@ RUN mkdir -p /var/log/supervisor
 
 RUN yum install -y --nogpgcheck redis
 
-EXPOSE 6379
+EXPOSE 22 6379
 CMD ["/usr/bin/supervisord"]
 
