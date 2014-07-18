@@ -1,7 +1,7 @@
 ### How to use
 
      $ REDIS_HOST=127.0.0.1    # Set the ip address/hostname of your docker host
-     $ docker run -d -t -p 6379:6379 mogproject/redis
+     $ docker run -d -p 6379:6379 mogproject/redis
 
 ##### Redis
 
